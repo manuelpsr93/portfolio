@@ -1,0 +1,14 @@
+tamaño fotos
+500*647
+
+foto perfil
+500*500
+
+foto bg main
+5000*2500
+
+foto designio
+1500*1125
+
+iconos
+64*64

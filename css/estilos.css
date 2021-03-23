@@ -1,0 +1,492 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------   HEADER ---------------- */
+header{
+	background: url(../img/bg_main.jpg);
+	background-size: 100%;
+	width: 100%;
+	padding-top: 20px;
+}
+
+header .navbar { /* barra centrada *** sin padding*/
+	padding: 0px;
+	width: 90%;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+header .navbar .logo img{ /*logo izq*/
+	height: 50px;
+	float: left;
+}
+
+header .navbar .btn{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0;
+	justify-content: space-between;
+}
+header .navbar .btn a{ /*botones a la derecha*/
+	font-family: 'Open Sans', sans-serif;
+	padding: 10px 25px;
+	color: #fff;
+	border-bottom: solid 3px rgba(0,0,0,.0);
+	text-decoration: none;
+	transition: ease-out 0.3s;
+}
+
+header .navbar .btn a:hover{ /*cambio de los botones*/
+	border-bottom: solid 3px rgba(255,255,255,.5);
+	transition: 0.3s ease
+}
+
+
+
+main{
+	font-family: 'Roboto', sans-serif; /*cambiar a otra mejor*/
+	padding: 290px 0 90px 0; /*altura*/
+	text-align: center;
+}
+
+main .titulo h1{ /* importante adaptar el tamaño al H1*/
+	color: rgba(255,255,255,0.6);
+	font-size: 80px;
+	font-weight: 900;
+	transition: ease-out 0.2s;
+}
+main .titulo h1:hover{ /* importante adaptar el tamaño al H1*/
+	color: rgba(255,255,255,1);
+	
+}
+main .subtitulo h5{ /* importante adaptar el tamaño al H1*/
+	color: rgba(255,255,255,0.6);
+	transition: ease-out 0.2s;
+	
+}
+main .subtitulo h5:hover{ /* importante adaptar el tamaño al H1*/
+	color: rgba(255,255,255,1);
+	
+}
+
+
+
+/* ------------ ARTICULO SOBRE MI --------------- */
+
+.principal{
+	padding: 100px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	max-width: 1200px;
+}
+.parrafo{
+	color: #9e9e9e;
+}
+.foto img{
+	width: 200px;
+	border-radius: 100%;
+	border: solid 5px rgba(255,255,255,0);
+	transition: ease-out 1s
+}
+.foto img:hover{
+	border: solid 5px #fcaf45;
+}
+.iconos{
+	width: 80%;
+	max-width: 1200px;
+	display: flex;
+	margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.icono{
+	padding:20px;
+}
+
+/* ------------ primera foto DESIGNIO --------------- */
+.foto1{
+	background:url(../img/designio.jpg);
+	width: auto;
+	height: 500px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+/* ------------ galeria --------------- */
+.portfolio{
+	text-align: center;
+	color: #fff;
+	background: #101010;
+	padding-top: 50px;
+}
+
+.galeria_fotos{
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+.item_galeria{
+	float: left;
+	width: 25%;
+}
+.item_galeria img{
+	width: 100%;
+	opacity: .7;
+	vertical-align: top;
+	transition: ease-out 0.3s;
+}
+.item_galeria img:hover {
+	opacity: 1;
+}
+
+
+/* ------------ footer --------------- */
+.footer{
+	height: 330px;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	width: 90%;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.direccion{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30%;
+}
+.ciudad{
+	color: #9e9e9e;
+	font-size: 16px;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.fa-map-marker-alt{
+	margin-left: 20%; 
+	padding: 10px 0;
+	font-size: 40px;
+}
+.fa-map-marker-alt:hover{
+	color: red;
+}
+.manuelp_raw{
+	color: #9e9e9e;
+	font-size: 50px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	line-height: 1;
+	transition: ease-out 0.6s;
+	margin-bottom: 50px;
+}
+
+.manuelp_raw:hover{
+	color: #101010;
+	transition: 0.6s ease;
+}
+
+
+.redes{
+	width: 45%;
+	text-align: right;
+	font-size: 40px;
+}
+.redes a{
+	text-decoration: none;
+}
+.instagram{
+	color: #9e9e9e;
+	padding: 10px;
+	transition: ease-out 0.6s;
+	border-right: solid 10px rgba(0,0,0,.0);
+}
+.instagram:hover{
+	color: #2B2B2B;
+	border-right: solid 10px #fcaf45;
+	transition: 0.6s ease;
+	padding: 10px;
+}
+
+.patreon{
+	color: #9e9e9e;
+	transition: ease-out 0.6s;
+	border-right:solid 10px rgba(0,0,0,.0);
+	padding: 10px;
+}
+.patreon:hover{
+	color: #2B2B2B;
+	border-right: solid 10px #f96854;
+	transition: 0.6s ease;
+	padding: 10px;
+}
+
+.behance{
+	color: #9e9e9e;
+	transition: ease-out 0.6s;
+	border-right: solid 10px rgba(0,0,0,.0);
+	padding: 10px;
+}
+.behance:hover{
+	color: #2B2B2B;
+	border-right: solid 10px #1769ff;
+	transition: 0.6s ease;
+	padding: 10px;
+}
+.copyright{
+	background: #101010;
+	color: #e9e9e9;
+	text-align: center;
+	font-size: 10px;
+	padding: 10px 0;
+}
+
+
+
+/*-------RESPONSIVE TABLET--------*/
+@media screen and (max-width: 1200px){
+header{
+	background-size: 150%;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px){
+header{
+	background-size: 190%;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+main .titulo h1{
+	font-size: 50px;
+}
+main .subtitulo h5{
+	font-size: 20px;
+}
+.item_galeria{
+	width: 50%;
+}
+.manuelp_raw{
+	text-align: center;
+	color: #9e9e9e;
+	font-size: 30px;
+	width: 100%;
+	line-height: 0.7;
+	padding: 20px 0;
+}
+
+.footer{
+	width: 90%;
+	background: #fff;
+	height: 200px;
+	padding: 0px;
+	margin-top: 20px;
+	flex-direction: column;
+}
+.direccion{
+	width: 100%;
+	text-align: center;
+}
+.direccion a{
+	margin: auto;
+}
+.redes{
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	padding: 0;
+}
+.copyright {
+	margin-top: 50px;
+	width: 100%;
+}
+.fa-instagram, .fa-patreon, .fa-behance:before {
+    content: "\f16d";
+    padding-left: 0px;
+}
+
+.instagram, .patreon, .behance{
+	width: 20%;
+	display: inline-block;
+	margin: auto;
+	padding:5px;
+}
+
+@media screen and (max-width: 600px){
+main{
+	margin-bottom: 20px;
+}
+header .navbar { /* barra centrada *** sin padding*/
+	flex-direction: column;
+}
+
+
+.redes{
+	display: flex;
+	flex-direction: column;
+}
+.instagram, .patreon, .behance{
+	width: 50%;
+}
+.copyright{
+	margin-top: 100px;
+}
+
+@media screen and (max-width: 550px){
+main{
+padding: 100px 0 90px 0; /*altura*/	
+	}}
+
+/*-------RESPONSIVE MOVIL--------*/
+@media screen and (max-width: 430px){
+header{
+	background-size: 190%;
+	background-position: top;
+	background-repeat: no-repeat;
+	height: 350px;
+}
+main{
+	padding-top: 150px;
+}
+main .titulo h1{
+	font-size: 30px;
+}
+main .subtitulo h5{
+	font-size: 15px;
+}
+
+
+header .navbar .btn{ /*botones a la derecha*/
+	text-align: center;
+	width: 100%;
+	padding-top: 20px;
+}
+header .navbar .btn a{ /*botones a la derecha*/
+	width: 20%;
+	padding: 0px 0px;
+	margin: auto;
+}
+.item_galeria{
+	width: 100%;
+}
+.principal{
+	padding: 30px 10px;
+	width: 95%;
+	font-size: 16px;
+}
+.foto1{
+	height: 650px;
+}
+
+.manuelp_raw{
+	color: #9e9e9e;
+	font-size: 90%;
+}
+
+.footer{
+	padding:0;
+	height: 220px;
+}
+.instagram, .patreon, .behance{
+	width: 50%;
+	display:block;
+}
+.copyright {
+	font-size: 8px;
+}
+}
+
+/*-------RESPONSIVE MOVIL--------*/
+@media screen and (max-width: 350px){
+header{
+	background-size: 150%;
+	background-position: top;
+	background-repeat: no-repeat;
+	height: 230px;
+}
+main{
+	padding-top: 50px;
+}
+main .titulo h1{
+	font-size: 25px;
+}
+main .subtitulo h5{
+	font-size: 10px;
+}
+
+
+header .navbar { /* barra centrada *** sin padding*/
+	flex-direction: column;
+
+}
+header .navbar .btn{ /*botones a la derecha*/
+	text-align: center;
+	width: 100%;
+	padding-top: 0;
+}
+header .navbar .btn a{ /*botones a la derecha*/
+	width: 20%;
+	font-size: 12px;
+	padding: 0px 0px;
+	margin: auto;
+}
+.item_galeria{
+	width: 100%;
+}
+.principal{
+	padding: 20px;
+	width: 95%;
+	font-size: 16px;
+}
+.icono{
+	padding:20px 10px;
+	width: 40%;
+}
+.foto1{
+	height: 650px;
+}
+
+.direccion{
+	text-align: center;
+}
+.direccion a{
+	margin: auto;
+}
+.manuelp_raw{
+	color: #9e9e9e;
+	font-size: 90%;
+}
+
+.footer{
+	padding:0;
+	height: 300px;
+}
+.instagram, .patreon, .behance{
+	width: 50%;
+	display:block;
+}
+
+.copyright {
+	margin-top: 20px;
+	font-size: 8px;
+}
+}
+@media screen and (max-width: 350px){
+.copyright{
+	margin-top: 100px;
+}
+}
